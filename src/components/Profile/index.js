@@ -15,15 +15,15 @@ const Profile = () => (
             }
           }   
     `}
-        render={data => {
-            let dataPatch = data.site.siteMetadata;
-            return <div className="Profile-wrapper">
-                <h1>{dataPatch.title}</h1>
-                <h2>{dataPatch.position}</h2>
-                <p>{dataPatch.description}</p>
+        render={({ site: { siteMetadata: { title, position, description } } }) => (
+
+            <div className="Profile-wrapper">
+                <h1>{title}</h1>
+                <h2>{position}</h2>
+                <p>{description}</p>
             </div>
-        }
-        }
+
+        )}
     />
 
 )
