@@ -2,7 +2,7 @@ backend:
   name: github
   repo: samuelematias/samuelematias.com
   branch: master
-  site_domain: http://samuelematias.com
+  site_domain: https://samuelematias.com/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
