@@ -8,7 +8,7 @@ module.exports = {
     position: "Software Engineer",
     description: `A blog about tech, esports, diversity, music and cool stuffs.`,
     author: `@samuelematias`,
-    siteUrl: `https://samuelematias.com`,
+    siteUrl: `http://samuelematias.com`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -87,5 +87,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify-cms`,
   ],
 }
