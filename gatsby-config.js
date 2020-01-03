@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `Samuel Matias`,
     position: "Software Engineer",
-    description: `A blog about tech, esports, diversity, music and cool stuffs.`,
+    description: `Um blog de um Desenvolvedor Mobile Multiplataforma, fã do Dart, Flutter, Javascript, React Native e novas tecnologias. Amante da Musica, atualmente trabalhando no iFood e desenvolvendo umas coisas legais.`,
+    authorDescription: `Revolucionando o Universo da Alimentação no iFood, escrevo sobre Tecnologia, Diversidade, algumas vezes sobre minha vida pessoal e mais.`,
     author: `@samuelematias`,
     siteUrl: `https://samuelematias.com/`,
   },
