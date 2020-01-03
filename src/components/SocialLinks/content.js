@@ -10,6 +10,10 @@ const links = [
     url: `https://twitter.com/${handle}`,
   },
   {
+    label: "Medium",
+    url: `https://medium.com/@${handle}`,
+  },
+  {
     label: "Instagram",
     url: `https://www.instagram.com/${handle}`,
   },
