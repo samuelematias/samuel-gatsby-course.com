@@ -1,5 +1,7 @@
 import { createGlobalStyle } from "styled-components"
 
+import * as V from "./variables"
+
 const GlobalStyles = createGlobalStyle`
   /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -63,14 +65,14 @@ const GlobalStyles = createGlobalStyle`
   	height: auto;
   }
   body.dark {
-    --borders: #38444d;
-    --texts: #8899a6;
-    --postColor: #fff;
-    --highlight: #1fa1f2;
-    --mediumBackground: #192734;
-    --background: #16202c;
-    --white: #fff;
-    --black: #222;
+    --borders: ${V.Color.grayDark};
+    --texts: ${V.Color.grayWhite};
+    --postColor: ${V.Color.white};
+    --highlight: ${V.Color.blueLight};
+    --mediumBackground: ${V.Color.blackSolid};
+    --background: ${V.Color.grayDarker};
+    --white: ${V.Color.white};
+    --black: ${V.Color.black};
   }
   body.light {
     --borders: #dedede;
