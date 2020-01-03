@@ -1,19 +1,19 @@
 import React from "react"
 
 import Icons from "./icons"
-import Links from "./content"
+import links from "./content"
 
 import * as S from "./styled"
 
 const SocialLinks = () => (
   <S.SocialLinksWrapper>
     <S.SocialLinksList>
-      {Links.map((link, i) => {
+      {links.map((link, i) => {
         const Icon = Icons[link.label]
 
         return (
-          <S.SocialLinksItem key={i}>
-            <S.SocialLinksLink
+          <li key={i}>
+            <a
               href={link.url}
               title={link.label}
               target="_blank"
@@ -22,8 +22,8 @@ const SocialLinks = () => (
               <S.IconWrapper>
                 <Icon />
               </S.IconWrapper>
-            </S.SocialLinksLink>
-          </S.SocialLinksItem>
+            </a>
+          </li>
         )
       })}
     </S.SocialLinksList>
