@@ -29,6 +29,7 @@ const MenuBar = () => {
           direction="right"
           bg={getThemeColor()}
           title="Voltar para Home"
+          activeClassName="active"
         >
           <S.MenuBarItem>
             <Icon.Home />
@@ -40,6 +41,7 @@ const MenuBar = () => {
           direction="right"
           bg={getThemeColor()}
           title="Pesquisar"
+          activeClassName="active"
         >
           <S.MenuBarItem>
             <Icon.Search />
