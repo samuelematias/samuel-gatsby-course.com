@@ -8,7 +8,7 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   ${media.lessThan("large")`
-    display: none;
+    display: ${props => !props.isAboutPage && "none"};
   `}
 `
 

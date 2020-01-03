@@ -98,7 +98,7 @@ const AboutPage = () => (
         qualquer uma das minhas redes sociais.
       </p>
 
-      <SocialLinks hideStyle />
+      <SocialLinks isAboutPage={true} hideStyle />
     </MainContent>
   </Layout>
 )
