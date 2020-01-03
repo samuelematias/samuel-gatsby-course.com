@@ -53,6 +53,14 @@ const MenuBar = () => {
           title="Mudar o tema"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? "light" : "dark")
+
+            if (window.DISQUS !== undefined) {
+              window.setTimeout(() => {
+                window.DISQUS.reset({
+                  reload: true,
+                })
+              }, 300)
+            }
           }}
           className={theme}
         >
@@ -67,7 +75,10 @@ const MenuBar = () => {
         >
           {isListMode ? <Icon.Grid /> : <Icon.List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem
+          title="Ir para o Topo"
+          onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+        >
           <Icon.Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>
