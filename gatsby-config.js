@@ -66,6 +66,13 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "pt-br",
+        useLangKeyLayout: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Samuel Matias`,
