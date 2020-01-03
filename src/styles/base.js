@@ -1,6 +1,8 @@
 import styled from "styled-components"
 import media from "styled-media-query"
 
+import transitions from "./transitions"
+
 export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
@@ -189,7 +191,8 @@ export const MainContent = styled.section`
     margin: 1rem auto !important;
   }
   a {
-    border-bottom: 1px dashed var(--highlight);
+    /* dashed on Hyperlink */
+    /* border-bottom: 1px dashed var(--highlight); */
     color: var(--highlight);
     text-decoration: none;
     transition: opacity 0.5s;
@@ -198,6 +201,26 @@ export const MainContent = styled.section`
     }
     &:hover {
       opacity: 0.8;
+    }
+  }
+`
+export const ButtonLink = styled.div`
+  padding: 0 1.5rem;
+  ${media.lessThan("large")`
+    padding: 0 1rem;
+  `}
+
+  .active {
+    color: var(--highlight);
+  }
+
+  a {
+    color: var(--texts);
+    text-decoration: none;
+    transition: ${transitions.COLOR};
+
+    &:hover {
+      color: var(--highlight);
     }
   }
 `
