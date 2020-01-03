@@ -90,10 +90,10 @@ const AboutPage = () => (
         <li>O que eu não sei, aprendo rápido =)</li>
       </ul>
 
-      <h2>Contato</h2>
+      <h2>Dê um Oi</h2>
 
       <p>
-        Você pode entrar em contato comigo através do meu email{" "}
+        Você consegue falar comigo através do meu email{" "}
         <a href="mailto:hi@samuelematias.com">hi@samuelematias.com</a> ou de
         qualquer uma das minhas redes sociais.
       </p>
