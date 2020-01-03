@@ -68,12 +68,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Samuel Matias Blog`,
-        short_name: `samuelematias`,
+        name: `Samuel Matias`,
+        short_name: `samuelematias.com`,
         start_url: `/`,
-        background_color: `#1C2938`,
-        theme_color: `#1C2938`,
-        display: `Fullscreen`,
+        background_color: `#1d1d1d`,
+        theme_color: `#0e1111`,
+        display: `minimal-ui`,
         icon: `static/assets/img/samuelematias-icon.png`, // This path is relative to the root of the site.
       },
     },
