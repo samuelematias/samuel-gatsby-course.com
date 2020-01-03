@@ -13,7 +13,7 @@ export const RecommendedWrapper = styled.section`
 
 export const RecommendedLink = styled(AniLink)`
   align-items: center;
-  background: var(--mediumBackground);
+  background: var(--background);
   color: var(--highlight);
   display: flex;
   padding: 3rem;
@@ -28,7 +28,7 @@ export const RecommendedLink = styled(AniLink)`
   `}
 
   &:hover {
-    background: var(--borders);
+    background: var(--mediumBackground);
   }
 
   &.previous {
