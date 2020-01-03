@@ -18,10 +18,10 @@ const Pagination = ({
     {!isFirst && (
       <AniLink
         to={prevPage}
+        rel="prev"
         cover
         direction="left"
         bg={getThemeColor()}
-        duration={0.6}
       >
         ← página anterior
       </AniLink>
@@ -32,10 +32,10 @@ const Pagination = ({
     {!isLast && (
       <AniLink
         to={nextPage}
+        rel="next"
         cover
         direction="right"
         bg={getThemeColor()}
-        duration={0.6}
       >
         proxima página →
       </AniLink>
