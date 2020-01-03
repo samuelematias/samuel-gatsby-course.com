@@ -1,9 +1,9 @@
 import React from "react"
 
-import PostItem from "../PostItem"
+import Post from "../Post"
 
 const Hit = ({ hit }) => (
-  <PostItem
+  <Post
     slug={hit.fields.slug}
     background={hit.background}
     title={hit.title}
