@@ -19,7 +19,6 @@ function SEO({ description, lang, meta, title, image }) {
             title
             description
             author
-            siteUrl
           }
         }
       }
@@ -27,9 +26,7 @@ function SEO({ description, lang, meta, title, image }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
-  const url = site.siteMetadata.siteUrl
-  const ogImage = `${url}${image || "/assets/og-image.png"}`
+  const ogImage = image || "https://samuelematias.com/assets/img/og-image.png"
 
   return (
     <Helmet
@@ -45,7 +42,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: `og:description`,
@@ -73,7 +70,7 @@ function SEO({ description, lang, meta, title, image }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
@@ -85,7 +82,7 @@ function SEO({ description, lang, meta, title, image }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `pt-br`,
   meta: [],
   description: ``,
 }
