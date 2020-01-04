@@ -28,11 +28,27 @@ const MenuBar = () => {
           cover
           direction="right"
           bg={getThemeColor()}
-          duration={0.6}
           title="Voltar para Home"
+          activeClassName="active"
         >
           <S.MenuBarItem>
             <Icon.Home />
+          </S.MenuBarItem>
+        </S.MenuBarLink>
+        <S.MenuBarLink
+          to={
+            window.location.href.includes("/en/about/")
+              ? "/en/about/"
+              : "/about/"
+          }
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          title="Sobre mim"
+          activeClassName="active"
+        >
+          <S.MenuBarItem>
+            <Icon.About />
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
@@ -40,8 +56,8 @@ const MenuBar = () => {
           cover
           direction="right"
           bg={getThemeColor()}
-          duration={0.6}
           title="Pesquisar"
+          activeClassName="active"
         >
           <S.MenuBarItem>
             <Icon.Search />
@@ -53,6 +69,14 @@ const MenuBar = () => {
           title="Mudar o tema"
           onClick={() => {
             window.__setPreferredTheme(isDarkMode ? "light" : "dark")
+
+            if (window.DISQUS !== undefined) {
+              window.setTimeout(() => {
+                window.DISQUS.reset({
+                  reload: true,
+                })
+              }, 300)
+            }
           }}
           className={theme}
         >
@@ -67,7 +91,10 @@ const MenuBar = () => {
         >
           {isListMode ? <Icon.Grid /> : <Icon.List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
+        <S.MenuBarItem
+          title="Ir para o Topo"
+          onClick={() => window.scroll({ top: 0, behavior: "smooth" })}
+        >
           <Icon.Arrow />
         </S.MenuBarItem>
       </S.MenuBarGroup>

@@ -28,7 +28,7 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["jekyll", "css", "js", "html", "svg", "dev", "misc"],
+          options: ["dart", "flutter", "js", "rn", "react", "dev", "stuff"],
         }
       - {
           label: "Background",
@@ -36,13 +36,13 @@ collections:
           widget: "select",
           options:
             [
-              { label: "Jekyll", value: "#B31917" },
-              { label: "CSS", value: "#2DA0C3" },
+              { label: "Dart", value: "#2874A6" },
+              { label: "Flutter", value: "#3498DB" },
               { label: "JS", value: "#D6BA32" },
-              { label: "HTML", value: "#EB7728" },
-              { label: "SVG", value: "#7D669E" },
+              { label: "RN", value: "#17A589" },
+              { label: "React", value: "#148F77" },
               { label: "Dev", value: "#637a91" },
-              { label: "Misc", value: "#7AAB13" },
+              { label: "Stuff", value: "#F39C12" },
             ],
         }
       - { label: "Body", name: "body", widget: "markdown" }

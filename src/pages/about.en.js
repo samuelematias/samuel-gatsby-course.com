@@ -24,43 +24,47 @@ const AboutPage = () => {
 
   return (
     <Layout>
-      <SEO title="Sobre mim" description={site.siteMetadata.description} />
+      <SEO
+        lang="en"
+        title="About me"
+        description={site.siteMetadata.descriptionEn}
+      />
       <MainContent>
         <ButtonLink>
           <AniLink
             cover
-            direction="right"
+            direction="left"
             bg={getThemeColor()}
-            to="/en/about/"
+            to="/about/"
             activeClassName="active"
           >
-            View in english
+            Ver em português
           </AniLink>
         </ButtonLink>
-        <h1>Sobre mim</h1>
+        <h1>About me</h1>
         <p>
-          Meu nome é <span itemProp="name">Samuel Matias</span>, sou de{" "}
-          <span itemProp="place">Recife/PE</span> e trabalho como{" "}
-          <span itemProp="jobRole">Desenvolvedor</span> desde 2015. De 2015 para
-          cá, já trabalhei com Automação de Testes, Back-end e Front-end. Desde
-          de 2018 mudei meu foco para{" "}
-          <span itemProp="jobRole">Desenvolvimento Mobile Multiplataforma</span>
-          , usando tecnologias como{" "}
+          My name is <span itemProp="name">Samuel Matias</span>, I'm from{" "}
+          <span itemProp="place">Recife/PE/Brazil</span> and I work as a{" "}
+          <span itemProp="jobRole">Developer</span> since 2015. From 2015 to
+          Here, I've worked with Test Automation, Backend and Frontend. Since
+                   2018 I changed my focus to{" "}
+          <span itemProp="jobRole">Cross Platform Mobile Developer</span>, using
+          technologies like{" "}
           <a
             href="https://flutter.dev/"
             target="_blank"
             rel="noopener noreferrer"
-            title="Ver"
+            title="Show"
             itemProp="tech"
           >
             Flutter
           </a>{" "}
-          e{" "}
+          and{" "}
           <a
             href="https://facebook.github.io/react-native/"
             target="_blank"
             rel="noopener noreferrer"
-            title="Ver"
+            title="Show"
             itemProp="tech"
           >
             React Native
@@ -69,38 +73,37 @@ const AboutPage = () => {
         </p>
         <p>
           {" "}
-          Amo disseminar meu conhecimento de diversas formas como escrevendo
-          artigos, fazendo talks e mentorias. Algo que me deixa muito feliz é
-          saber que o produto que fiz ou que estou fazendo está impactando de
-          maneira positiva várias pessoas.
+          I love to spread my knowledge in many ways such as writing articles,
+          doing talks and mentoring. Something that makes me very happy is
+          knowing that the product I made or am making is positively impacting
+          many people.
         </p>
         <p>
-          Atualmente estou Revolucionando o Universo da Alimentação no{" "}
+          I'm currently Revolutionising the Universe of Food at{" "}
           <a
             href="https://www.ifood.com.br"
             target="_blank"
             rel="noopener noreferrer"
-            title="Ver"
+            title="Show"
             itemProp="affiliation"
           >
             iFood
           </a>{" "}
-          como <span itemProp="jobTitle">Software Engineer</span>. Sou fundador
-          do{" "}
+          as <span itemProp="jobTitle">Software Engineer</span>. I'm founder of{" "}
           <a
             href="https://github.com/reactrecife"
             target="_blank"
             rel="noopener noreferrer"
-            title="Ver"
+            title="Show"
             itemProp="organizer"
           >
             React Recife
           </a>
-          , que seria um grupo que promove Meetups e Eventos para disseminar o
-          conhecimento do React e seu ecossistema no Recife.
+          , would be a group that promotes Meetups and Events to spread the
+          knowledge of React and its ecosystem in Recife.
         </p>
 
-        <h2>Habilidades</h2>
+        <h2>Skills</h2>
 
         <ul>
           <li>Git</li>
@@ -112,15 +115,15 @@ const AboutPage = () => {
           <li>React Native</li>
           <li>Redux</li>
           <li>GraphQL</li>
-          <li>O que eu não sei, aprendo rápido =)</li>
+          <li>What I don't know, I learn fast =)</li>
         </ul>
 
-        <h2>Dê um Oi</h2>
+        <h2>Say hi</h2>
 
         <p>
-          Você consegue falar comigo através do meu email{" "}
-          <a href="mailto:hi@samuelematias.com">hi@samuelematias.com</a> ou de
-          qualquer uma das minhas redes sociais.
+          Can you talk to me through my email{" "}
+          <a href="mailto:hi@samuelematias.com">hi@samuelematias.com</a> or any
+          of my social networks.
         </p>
 
         <SocialLinks isAboutPage={true} hideStyle />

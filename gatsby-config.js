@@ -6,7 +6,9 @@ module.exports = {
   siteMetadata: {
     title: `Samuel Matias`,
     position: "Software Engineer",
-    description: `A blog about tech, esports, diversity, music and cool stuffs.`,
+    description: `Um blog de um Desenvolvedor Mobile Multiplataforma, fã do Dart, Flutter, Javascript, React Native e novas tecnologias. Amante da Musica, atualmente trabalhando no iFood e desenvolvendo umas coisas legais.`,
+    descriptionEn: `A blog by a Cross Platform Mobile Developer, fan of Dart, Flutter, Javascript, React Native and new technologies. Music lover, currently working on iFood and developing some cool stuff.`,
+    authorDescription: `Revolucionando o Universo da Alimentação no iFood, escrevo sobre Tecnologia, Diversidade, algumas vezes sobre minha vida pessoal e mais.`,
     author: `@samuelematias`,
     siteUrl: `https://samuelematias.com/`,
   },
@@ -20,13 +22,6 @@ module.exports = {
       options: {
         name: `uploads`,
         path: `${__dirname}/static/assets/img`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
       },
     },
     {
@@ -72,15 +67,22 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-i18n",
+      options: {
+        langKeyDefault: "pt-br",
+        useLangKeyLayout: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Samuel Matias`,
-        short_name: `Samuel Matias`,
+        short_name: `samuelematias.com`,
         start_url: `/`,
-        background_color: `#16202c`,
-        theme_color: `#16202c`,
-        display: `Fullscreen`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#1d1d1d`,
+        theme_color: `#0e1111`,
+        display: `minimal-ui`,
+        icon: `static/assets/img/samuelematias-icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,

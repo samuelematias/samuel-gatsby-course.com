@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 
-import * as S from "../components/Post/styled"
+import * as S from "../styles/base"
 
 const BlogPost = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -18,7 +18,11 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
+        image={
+          post.frontmatter.image
+            ? `https://samuelematias.com${post.frontmatter.image}`
+            : "https://samuelematias.com/assets/img/og-image.jpg"
+        }
       />
       <S.PostHeader>
         <S.PostDate>
