@@ -18,7 +18,11 @@ const BlogPost = ({ data, pageContext }) => {
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
-        image={post.frontmatter.image}
+        image={
+          post.frontmatter.image
+            ? `https://samuelematias.com${post.frontmatter.image}`
+            : "https://samuelematias.com/assets/img/og-image.jpg"
+        }
       />
       <S.PostHeader>
         <S.PostDate>
