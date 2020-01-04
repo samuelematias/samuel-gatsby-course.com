@@ -2,6 +2,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import * as R from "../Responsive"
+
 import * as S from "../../styles/base"
 
 const PostHeader = ({ image, date, timeToRead, title, description }) => {
@@ -29,9 +31,11 @@ const PostHeader = ({ image, date, timeToRead, title, description }) => {
 
   return (
     <>
-      <S.PostImageWrapper>
-        <S.PostImage fluid={postImage.node.childImageSharp.fluid} />
-      </S.PostImageWrapper>
+      <R.GreaterThanTablet>
+        <div>
+          <S.PostImage fluid={postImage.node.childImageSharp.fluid} />
+        </div>
+      </R.GreaterThanTablet>
       <S.PostDate>
         {date} • {timeToRead} min de leitura
       </S.PostDate>

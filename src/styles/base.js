@@ -9,7 +9,8 @@ export const PostContainer = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
-  ${media.lessThan("large")`
+
+  ${media.lessThan("767px")`
     padding: 3rem 0 0;
     max-width: 100%;
   `}
@@ -225,11 +226,6 @@ export const ButtonLink = styled.div`
       color: var(--highlight);
     }
   }
-`
-export const PostImageWrapper = styled.div`
-  ${media.lessThan("large")`
-    display: none;
-  `}
 `
 
 export const PostImage = styled(Img).attrs({
