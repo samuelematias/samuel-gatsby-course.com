@@ -27,13 +27,7 @@ const AboutPage = () => {
       <SEO title="Sobre mim" description={site.siteMetadata.description} />
       <MainContent>
         <ButtonLink>
-          <AniLink
-            cover
-            direction="right"
-            bg={getThemeColor()}
-            to="/en/about/"
-            activeClassName="active"
-          >
+          <AniLink cover direction="right" bg={getThemeColor()} to="/en/about/">
             View in english
           </AniLink>
         </ButtonLink>
