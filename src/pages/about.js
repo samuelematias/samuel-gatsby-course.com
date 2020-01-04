@@ -75,7 +75,7 @@ const AboutPage = () => {
           maneira positiva várias pessoas.
         </p>
         <p>
-          Atualmente estou Revolucionando o Universo da Alimentação no{" "}
+          Atualmente, estou Revolucionando o Universo da Alimentação no{" "}
           <a
             href="https://www.ifood.com.br"
             target="_blank"
