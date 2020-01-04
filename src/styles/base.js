@@ -1,13 +1,14 @@
 import styled from "styled-components"
 import media from "styled-media-query"
+import Img from "gatsby-image"
 
+import * as V from "../styles/variables"
 import transitions from "./transitions"
 
-export const PostHeader = styled.header`
+export const PostContainer = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
-  padding: 5rem 5rem 0;
   ${media.lessThan("large")`
     padding: 3rem 0 0;
     max-width: 100%;
@@ -223,5 +224,38 @@ export const ButtonLink = styled.div`
     &:hover {
       color: var(--highlight);
     }
+  }
+`
+export const PostImageWrapper = styled.div`
+  ${media.lessThan("large")`
+    display: none;
+  `}
+`
+
+export const PostImage = styled(Img).attrs({
+  alt: "Imagem de introdução",
+  "aria-hidden": "true",
+})`
+  display: block;
+  height: 25vh;
+  left: calc(-50vw + 50%);
+  margin-bottom: ${V.Space.sm};
+  object-fit: cover;
+  position: relative;
+  width: 100vw;
+
+  &:not(:last-child) {
+    margin-bottom: ${V.Space.default};
+  }
+
+  &:after {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: ${V.ZIndex.default};
   }
 `
