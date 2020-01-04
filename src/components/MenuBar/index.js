@@ -36,6 +36,22 @@ const MenuBar = () => {
           </S.MenuBarItem>
         </S.MenuBarLink>
         <S.MenuBarLink
+          to={
+            window.location.href.includes("/en/about/")
+              ? "/en/about/"
+              : "/about/"
+          }
+          cover
+          direction="right"
+          bg={getThemeColor()}
+          title="Sobre mim"
+          activeClassName="active"
+        >
+          <S.MenuBarItem>
+            <Icon.About />
+          </S.MenuBarItem>
+        </S.MenuBarLink>
+        <S.MenuBarLink
           to="/search/"
           cover
           direction="right"
