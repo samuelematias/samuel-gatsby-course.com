@@ -14,8 +14,4 @@ Os computadores são máquinas muito eficazes, mas elas são "burras" e só segu
 
 O que muitas vezes acontece é que esquecemos ou fazemos algo errado durante o processo e aparece o famoso**bug**. Nesse momento entra o desespero e a pergunta mais famosa:
 
-
-
 ![LOL](/assets/img/profile-photo.png "XD")
-
->
