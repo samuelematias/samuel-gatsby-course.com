@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
+import PostHeader from "../components/PostHeader"
 
 import * as S from "../styles/base"
 
@@ -20,13 +21,15 @@ const BlogPost = ({ data, pageContext }) => {
         description={post.frontmatter.description}
         image={post.frontmatter.image}
       />
-      <S.PostHeader>
-        <S.PostDate>
-          {post.frontmatter.date} • {post.timeToRead} min de leitura
-        </S.PostDate>
-        <S.PostTitle>{post.frontmatter.title}</S.PostTitle>
-        <S.PostDescription>{post.frontmatter.description}</S.PostDescription>
-      </S.PostHeader>
+      <S.PostContainer>
+        <PostHeader
+          image={post.frontmatter.image}
+          date={post.frontmatter.date}
+          title={post.frontmatter.title}
+          description={post.frontmatter.description}
+          timeToRead={post.timeToRead}
+        />
+      </S.PostContainer>
       <S.MainContent>
         <div dangerouslySetInnerHTML={{ __html: post.html }}></div>
       </S.MainContent>

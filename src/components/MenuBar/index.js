@@ -20,6 +20,14 @@ const MenuBar = () => {
     window.__onDisplayChange = () => setDisplay(window.__display)
   }, [])
 
+  const onChange = () => {
+    window.__setPreferredTheme(isDarkMode ? "light" : "dark")
+
+    if (window && window.DISQUS !== undefined) {
+      window.setTimeout(() => window.DISQUS.reset({ reload: true }), 600)
+    }
+  }
+
   return (
     <S.MenuBarWrapper>
       <S.MenuBarGroup>
@@ -67,17 +75,7 @@ const MenuBar = () => {
       <S.MenuBarGroup>
         <S.MenuBarItem
           title="Mudar o tema"
-          onClick={() => {
-            window.__setPreferredTheme(isDarkMode ? "light" : "dark")
-
-            if (window.DISQUS !== undefined) {
-              window.setTimeout(() => {
-                window.DISQUS.reset({
-                  reload: true,
-                })
-              }, 300)
-            }
-          }}
+          onClick={onChange}
           className={theme}
         >
           <Icon.Light />
