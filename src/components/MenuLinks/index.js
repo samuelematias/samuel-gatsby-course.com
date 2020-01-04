@@ -15,7 +15,13 @@ const MenuLinks = () => (
             cover
             direction="left"
             bg={getThemeColor()}
-            to={link.url}
+            to={
+              window.location.href.includes("/en/about/") && link.label === "hi"
+                ? "/en/about/"
+                : link.label === "hi"
+                ? "/about/"
+                : link.url
+            }
             activeClassName="active"
           >
             {link.label}
