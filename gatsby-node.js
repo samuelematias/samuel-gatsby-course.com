@@ -27,7 +27,10 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return graphql(`
     {
-      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+      ) {
         edges {
           node {
             fields {
@@ -41,14 +44,14 @@ exports.createPages = ({ graphql, actions }) => {
               title
               image
             }
-            timeToRead
           }
           next {
-            frontmatter {
-              title
-            }
             fields {
               slug
+            }
+            frontmatter {
+              title
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             }
           }
           previous {
@@ -57,6 +60,7 @@ exports.createPages = ({ graphql, actions }) => {
             }
             frontmatter {
               title
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
             }
           }
         }

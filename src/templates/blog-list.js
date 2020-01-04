@@ -38,7 +38,7 @@ const BlogList = props => {
               background={background}
               category={category}
               date={date}
-              timeToRead={timeToRead.toString()}
+              timeToRead={timeToRead}
               title={title}
               description={description}
             />
