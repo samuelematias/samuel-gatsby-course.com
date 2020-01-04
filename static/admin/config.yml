@@ -2,7 +2,7 @@ backend:
   name: github
   repo: samuelematias/samuelematias.com
   branch: master
-  # site_domain: https://samuelematias.com/
+  site_domain: https://samuelematias.com/
 
 media_folder: "static/assets/img"
 public_folder: "assets/img"
@@ -23,7 +23,7 @@ collections:
           widget: "datetime",
           format: "YYYY-MM-DD hh:mm:ss",
         }
-      - { label: "image", name: "thumbnail", widget: "image" }
+      - { label: "Post Image", name: "image", widget: "image" }
       - {
           label: "Category",
           name: "category",
