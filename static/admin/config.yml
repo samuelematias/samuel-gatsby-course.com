@@ -2,11 +2,11 @@ backend:
   name: github
   repo: samuelematias/samuelematias.com
   branch: master
-  site_domain: https://samuelematias.com/
+  # site_domain: https://samuelematias.com/
 
-publish_mode: editorial_workflow
 media_folder: "static/assets/img"
 public_folder: "assets/img"
+publish_mode: editorial_workflow
 
 collections:
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
