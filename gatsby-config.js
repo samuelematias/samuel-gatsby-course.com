@@ -63,7 +63,7 @@ module.exports = {
         indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
         queries,
         chunkSize: 10000, // default: 1000
-        enablePartialUpdates: true,
+        enablePartialUpdates: false, //if you need delete some post and update the algolia search or add some new field on createPages query, set this for FALSE, after everything is updated, change to TRUE
       },
     },
     {
