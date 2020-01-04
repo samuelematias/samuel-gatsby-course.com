@@ -215,6 +215,7 @@ export const ButtonLink = styled.div`
   }
 
   a {
+    font-size: 1rem;
     color: var(--texts);
     text-decoration: none;
     transition: ${transitions.COLOR};
