@@ -31,13 +31,7 @@ const AboutPage = () => {
       />
       <MainContent>
         <ButtonLink>
-          <AniLink
-            cover
-            direction="left"
-            bg={getThemeColor()}
-            to="/about/"
-            activeClassName="active"
-          >
+          <AniLink cover direction="left" bg={getThemeColor()} to="/about/">
             Ver em português
           </AniLink>
         </ButtonLink>
