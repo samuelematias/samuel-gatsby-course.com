@@ -79,7 +79,7 @@ const AboutPage = () => {
           many people.
         </p>
         <p>
-          I'm currently Revolutionising the Universe of Food at{" "}
+          Currently, I'm Revolutionising the Universe of Food at{" "}
           <a
             href="https://www.ifood.com.br"
             target="_blank"
