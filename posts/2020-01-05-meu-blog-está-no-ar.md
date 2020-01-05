@@ -3,7 +3,7 @@ title: Meu Blog está no Ar
 description: "Demorou, mas saiu \U0001F389!!!"
 date: '2020-01-04 10:03:29'
 image: /assets/img/og-image.png
-category: stuff
+category: stuffs
 background: '#F39C12'
 ---
 Eae Galera, beleza ? Espero que sim 😃!
