@@ -28,7 +28,7 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["dart", "flutter", "js", "rn", "react", "dev", "stuff"],
+          options: ["dart", "flutter", "js", "rn", "react", "dev", "stuffs"],
         }
       - {
           label: "Background",
@@ -42,7 +42,7 @@ collections:
               { label: "RN", value: "#17A589" },
               { label: "React", value: "#148F77" },
               { label: "Dev", value: "#637a91" },
-              { label: "Stuff", value: "#F39C12" },
+              { label: "Stuffs", value: "#F39C12" },
             ],
         }
       - { label: "Body", name: "body", widget: "markdown" }
