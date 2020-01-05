@@ -34,7 +34,7 @@ const MenuBar = () => {
         <S.MenuBarLink
           to="/"
           cover
-          direction="right"
+          direction="left"
           bg={getThemeColor()}
           title="Voltar para Home"
           activeClassName="active"
