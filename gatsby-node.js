@@ -1,8 +1,6 @@
 const path = require("path")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 const functions = require("./src/utils/clean_slug.js")
-// var cleanSlug = require("./src/utils/clean_slug")
-// import cleanSlug from "./src/utils/clean_slug"
 
 // To add the slug field to each post
 exports.onCreateNode = ({ node, getNode, actions }) => {
