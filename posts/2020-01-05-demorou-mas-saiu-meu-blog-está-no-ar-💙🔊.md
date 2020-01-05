@@ -3,7 +3,7 @@ title: "Demorou, mas saiu! Meu Blog está no Ar \U0001F499\U0001F50A!!!"
 description: "Depois de séculos, finalmente saiu meu Site/Blog \U0001F389!!!"
 date: '2020-01-04 08:47:53'
 image: /assets/img/og-image.png
-category: stuff
+category: stuffs
 background: '#F39C12'
 ---
 Eae Galera, beleza ? Espero que sim 😃!
