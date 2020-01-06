@@ -8,9 +8,17 @@ module.exports = {
     position: "Software Engineer",
     description: `Um blog de um Desenvolvedor Mobile Multiplataforma, fã do Dart, Flutter, Javascript, React Native e novas tecnologias. Amante da Musica, atualmente trabalhando no iFood e desenvolvendo umas coisas legais.`,
     descriptionEn: `A blog by a Cross Platform Mobile Developer, fan of Dart, Flutter, Javascript, React Native and new technologies. Music lover, currently working on iFood and developing some cool stuff.`,
-    authorDescription: `Revolucionando o Universo da Alimentação no iFood, escrevo sobre Tecnologia, Diversidade, algumas vezes sobre minha vida pessoal e mais.`,
-    author: `@samuelematias`,
-    siteUrl: `https://samuelematias.com/`,
+    siteUrl: `https://samuelematias.com`,
+    image: "https://samuelematias.com/assets/img/og-image.png",
+    author: {
+      name: "Samuel Matias",
+      minibio: `Revolucionando o Universo da Alimentação no iFood, escrevo sobre Tecnologia, Diversidade, algumas vezes sobre minha vida pessoal e mais.`,
+    },
+    organization: {
+      name: "Samuel Matias",
+      url: "https://samuelematias.com",
+      logo: "https://samuelematias.com/assets/img/samuelematias-icon.png",
+    },
     social: {
       twitter: `samuelematias`,
       twitterLink: `https://twitter.com/samuelematias`,
