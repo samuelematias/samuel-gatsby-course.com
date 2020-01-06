@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import SEO from "../components/SEO/SEO"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 import PostHeader from "../components/PostHeader"
