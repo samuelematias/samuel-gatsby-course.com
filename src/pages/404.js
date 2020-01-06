@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import SEO from "../components/seo"
+import SEO from "../components/SEO/SEO"
 import GlobalStyles from "../styles/global"
 
 const Container = styled.section`
