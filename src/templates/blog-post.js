@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/SEO/SEO"
+import SEO from "../components/seo"
 import RecommendedPosts from "../components/RecommendedPosts"
 import Comments from "../components/Comments"
 import PostHeader from "../components/PostHeader"
@@ -20,7 +20,6 @@ const BlogPost = ({ data, pageContext }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description}
         image={post.frontmatter.image}
-        slug={post.fields.slug}
       />
       <S.PostContainer>
         <PostHeader
