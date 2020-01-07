@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 import Layout from "../components/Layout"
-import SEO from "../components/SEO/SEO"
+import SEO from "../components/seo"
 import SocialLinks from "../components/SocialLinks"
 import getThemeColor from "../utils/getThemeColor"
 
